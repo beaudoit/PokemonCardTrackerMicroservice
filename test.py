@@ -27,8 +27,40 @@ def send_request(collection):
 
     return request
 
-# No ultra-rare+ cards
+
+# Mix of common and ultra-rare+ cards, but all from set 151
 collection1 = [
+    { "name": "Bulbasaur", "set": "151", "number": "001/165", "rarity": "Common" },
+    { "name": "Charmander", "set": "151", "number": "004/165", "rarity": "Common" },
+    { "name": "Squirtle", "set": "151", "number": "007/165", "rarity": "Common" },
+    { "name": "Pidgey", "set": "151", "number": "016/165", "rarity": "Common" },
+    { "name": "Rattata", "set": "151", "number": "019/165", "rarity": "Common" },
+    { "name": "Mew ex", "set": "151", "number": "205/165", "rarity": "Hyper Rare" },
+    { "name": "Charizard ex", "set": "151", "number": "199/165", "rarity": "Special Illustration Rare" },
+    { "name": "Venusaur ex", "set": "151", "number": "182/165", "rarity": "Ultra Rare" },
+    { "name": "Blastoise ex", "set": "151", "number": "184/165", "rarity": "Ultra Rare" },
+    { "name": "Erika's Invitation", "set": "151", "number": "203/165", "rarity": "Special Illustration Rare" },
+    { "name": "Bulbasaur", "set": "151", "number": "166/165", "rarity": "Illustration Rare" },
+    { "name": "Charmander", "set": "151", "number": "168/165", "rarity": "Illustration Rare" },
+    { "name": "Squirtle", "set": "151", "number": "170/165", "rarity": "Illustration Rare" }
+  ]
+
+# Mix of common and ultra-rare+ cards from different sets (not only set 151)
+collection2 = [
+    { "name": "Charmander", "set": "151", "number": "004/165", "rarity": "Common" },
+    { "name": "Squirtle", "set": "151", "number": "007/165", "rarity": "Common" },
+    { "name": "Pidgey", "set": "151", "number": "016/165", "rarity": "Common" },
+    { "name": "Mew ex", "set": "151", "number": "205/165", "rarity": "Hyper Rare" },
+    { "name": "Erika's Invitation", "set": "151", "number": "203/165", "rarity": "Special Illustration Rare" },
+    { "name": "Charizard ex", "set": "151", "number": "199/165", "rarity": "Special Illustration Rare" },
+    { "name": "Gardevoir ex", "set": "Scarlet & Violet", "number": "086/198", "rarity": "Ultra Rare" },
+    { "name": "Mimikyu", "set": "Brilliant Stars", "number": "TG13/TG30", "rarity": "Ultra Rare" },
+    { "name": "Squawkabilly", "set": "Paldea Evolved", "number": "SV2-174", "rarity": "Common" },
+    { "name": "Pikachu", "set": "151", "number": "173/165", "rarity": "Illustration Rare" }
+  ]
+
+# No ultra-rare+ cards
+collection3 = [
     { "name": "Bulbasaur", "set": "151", "number": "001/165", "rarity": "Common" },
     { "name": "Ivysaur", "set": "151", "number": "002/165", "rarity": "Uncommon" },
     { "name": "Venusaur ex", "set": "151", "number": "003/165", "rarity": "Rare" },
@@ -41,7 +73,7 @@ collection1 = [
   ]
 
 # All ultra-rare+ cards
-collection2 = [
+collection4 = [
     {"name": "Bulbasaur", "set": "151", "number": "166/165", "rarity": "Illustration Rare"},
     {"name": "Ivysaur", "set": "151", "number": "167/165", "rarity": "Illustration Rare"},
     {"name": "Charmander", "set": "151", "number": "168/165", "rarity": "Illustration Rare"},
@@ -89,37 +121,6 @@ collection2 = [
     {"name": "Basic Energy", "set": "151", "number": "207/165", "rarity": "Hyper Rare"}
 ]
 
-# Mix of common and ultra-rare+ cards, but all from set 151
-collection3 = [
-    { "name": "Bulbasaur", "set": "151", "number": "001/165", "rarity": "Common" },
-    { "name": "Charmander", "set": "151", "number": "004/165", "rarity": "Common" },
-    { "name": "Squirtle", "set": "151", "number": "007/165", "rarity": "Common" },
-    { "name": "Pidgey", "set": "151", "number": "016/165", "rarity": "Common" },
-    { "name": "Rattata", "set": "151", "number": "019/165", "rarity": "Common" },
-    { "name": "Mew ex", "set": "151", "number": "205/165", "rarity": "Hyper Rare" },
-    { "name": "Charizard ex", "set": "151", "number": "199/165", "rarity": "Special Illustration Rare" },
-    { "name": "Venusaur ex", "set": "151", "number": "182/165", "rarity": "Ultra Rare" },
-    { "name": "Blastoise ex", "set": "151", "number": "184/165", "rarity": "Ultra Rare" },
-    { "name": "Erika's Invitation", "set": "151", "number": "203/165", "rarity": "Special Illustration Rare" },
-    { "name": "Bulbasaur", "set": "151", "number": "166/165", "rarity": "Illustration Rare" },
-    { "name": "Charmander", "set": "151", "number": "168/165", "rarity": "Illustration Rare" },
-    { "name": "Squirtle", "set": "151", "number": "170/165", "rarity": "Illustration Rare" }
-  ]
-
-# Mix of common and ultra-rare+ cards from different sets (not only set 151)
-collection4 = [
-    { "name": "Charmander", "set": "151", "number": "004/165", "rarity": "Common" },
-    { "name": "Squirtle", "set": "151", "number": "007/165", "rarity": "Common" },
-    { "name": "Pidgey", "set": "151", "number": "016/165", "rarity": "Common" },
-    { "name": "Mew ex", "set": "151", "number": "205/165", "rarity": "Hyper Rare" },
-    { "name": "Erika's Invitation", "set": "151", "number": "203/165", "rarity": "Special Illustration Rare" },
-    { "name": "Charizard ex", "set": "151", "number": "199/165", "rarity": "Special Illustration Rare" },
-    { "name": "Gardevoir ex", "set": "Scarlet & Violet", "number": "086/198", "rarity": "Ultra Rare" },
-    { "name": "Mimikyu", "set": "Brilliant Stars", "number": "TG13/TG30", "rarity": "Ultra Rare" },
-    { "name": "Squawkabilly", "set": "Paldea Evolved", "number": "SV2-174", "rarity": "Common" },
-    { "name": "Pikachu", "set": "151", "number": "173/165", "rarity": "Illustration Rare" }
-  ]
-
 collections = [collection1, collection2, collection3, collection4]
 
 if __name__ == "__main__":
@@ -129,7 +130,7 @@ if __name__ == "__main__":
     collection_counter = 0
     for collection in collections:
 
-        time.sleep(4)
+        time.sleep(2)
 
         collection_counter += 1
         print(f"Running test on collection{collection_counter}\n")
