@@ -88,7 +88,7 @@ that includes the following key/value pairs:
 {'action': 'calculate\_ultra\_rare\_plus',  
 'set': '151',  
 'collection': \[  
-   {'name': 'Bulbasaur', 'set': '151', 'number': '001/165', 'rarity': 'Common'},  
+{'name': 'Bulbasaur', 'set': '151', 'number': '001/165', 'rarity': 'Common'},  
 {'name': 'Charmander', 'set': '151', 'number': '004/165', 'rarity': 'Common'},  
 {'name': 'Squirtle', 'set': '151', 'number': '007/165', 'rarity': 'Common'},  
 {'name': 'Pidgey', 'set': '151', 'number': '016/165', 'rarity': 'Common'},  
