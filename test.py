@@ -130,17 +130,17 @@ if __name__ == "__main__":
     collection_counter = 0
     for collection in collections:
 
-        time.sleep(2)
+        time.sleep(5)
 
         collection_counter += 1
         print(f"Running test on collection{collection_counter}\n")
 
-        time.sleep(2)
+        time.sleep(5)
 
         request = send_request(collection)
         print(f"Sent request:\n\n{request}\n")
 
-        time.sleep(2)
+        time.sleep(5)
 
         with open(COMMS_FILE, "r") as file:
             response = json.load(file)
